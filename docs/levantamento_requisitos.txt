@@ -18,7 +18,7 @@ RF06 - Um personagem deve ser capaz de identificar a sua distância em relação
 RF07 - Um personagem deve ser capaz de interagir com outro personagem.
 RF07.1 - Um personagem deve realizar um ataque contra a AC de seu oponente e potencialmente alterar sua HP temporária.
 
-RNFXX - TODO:
+RNFXX - TODO
 
 Banco de dados: 
 

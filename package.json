@@ -1,0 +1,25 @@
+{
+  "name": "dnd_sim",
+  "version": "1.0.0",
+  "description": "README",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boguilhem/GameDev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boguilhem/GameDev/issues"
+  },
+  "homepage": "https://github.com/boguilhem/GameDev#readme",
+  "dependencies": {
+    "firebase-tools": "^7.12.1"
+  }
+}

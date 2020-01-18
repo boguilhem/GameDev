@@ -27,7 +27,6 @@ usersRef.on("child_added", snap => {
     $li.setAttribute("child-key", snap.key);
     $li.addEventListener("click", userClicked)
     userListUI.append($li);
-
 });
 
 
@@ -41,13 +40,9 @@ function userClicked(e) {
     userDetailUI.innerHTML = ""
 
     userRef.on("child_added", snap => {
-
-
         var $p = document.createElement("p");
         $p.innerHTML = snap.key + " - " + snap.val()
         userDetailUI.append($p);
-
-
     });
 
 }

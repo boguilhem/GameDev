@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/boguilhem/GameDev#readme",
   "dependencies": {
-    "firebase-tools": "^7.12.1"
+    "firebase": "^7.7.0",
+    "firebase-tools": "^7.12.1",
+    "node-pre-gyp": "^0.14.0"
   }
 }

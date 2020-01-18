@@ -1,17 +1,28 @@
+// Firebase App (the core Firebase SDK) is always required and must be listed first
+//const firebase = require("firebase");
+import firebase from 'firebase/app';
+
+// If you enabled Analytics in your project, add the Firebase SDK for Analytics
+//require('firebase/analytics');
+
+// Add the Firebase products that you want to use
+//require('firebase/auth');
+//require('firebase/firestore');
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD8qgRPsI7lhkHDJXolsN7Jx8dPqEvk_N0",
-  authDomain: "amagad-dnd-simulator.firebaseapp.com",
-  databaseURL: "https://amagad-dnd-simulator.firebaseio.com",
-  projectId: "amagad-dnd-simulator",
-  storageBucket: "amagad-dnd-simulator.appspot.com",
-  messagingSenderId: "657061116541",
-  appId: "1:657061116541:web:98d38cb385c7dde49d4f14",
-  measurementId: "G-CF001VZ2V0"
+    apiKey: "AIzaSyD8qgRPsI7lhkHDJXolsN7Jx8dPqEvk_N0",
+    authDomain: "amagad-dnd-simulator.firebaseapp.com",
+    databaseURL: "https://amagad-dnd-simulator.firebaseio.com",
+    projectId: "amagad-dnd-simulator",
+    storageBucket: "amagad-dnd-simulator.appspot.com",
+    messagingSenderId: "657061116541",
+    appId: "1:657061116541:web:98d38cb385c7dde49d4f14",
+    measurementId: "G-CF001VZ2V0"
 };
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
 
+// Initialize Firebase
+const app = firebase.initializeApp(firebaseConfig);
 
 const dbRef = firebase.database().ref();
 
@@ -19,7 +30,6 @@ const usersRef = dbRef.child('users');
 const userListUI = document.getElementById("userList");
 
 usersRef.on("child_added", snap => {
-
     let user = snap.val();
 
     let $li = document.createElement("li");
@@ -28,7 +38,6 @@ usersRef.on("child_added", snap => {
     $li.addEventListener("click", userClicked)
     userListUI.append($li);
 });
-
 
 function userClicked(e) {
 
@@ -44,6 +53,4 @@ function userClicked(e) {
         $p.innerHTML = snap.key + " - " + snap.val()
         userDetailUI.append($p);
     });
-
 }
-

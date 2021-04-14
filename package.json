@@ -1,0 +1,35 @@
+{
+  "name": "dnd_sim",
+  "version": "1.0.0",
+  "description": "README",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify user/src/app.js -o user/src/bundle.js -t babelify --presets babel/preset-env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boguilhem/GameDev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boguilhem/GameDev/issues"
+  },
+  "homepage": "https://github.com/boguilhem/GameDev#readme",
+  "dependencies": {
+    "firebase": "^7.7.0",
+    "firebase-tools": "^7.12.1",
+    "node-pre-gyp": "^0.14.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-core": "^6.26.3",
+    "babelify": "^10.0.0"
+  }
+}
